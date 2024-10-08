@@ -1,83 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
 /* Importa a fonte "Bodoni Moda" do Google Fonts */
-
-/* Parte relacionada a configurações em dispositivos menores que 410px */
-@media screen and (max-width:410px) {
-
-    /*
-    Configuração do tamanho do header, aumento para telas menores, 
-    com os botões de navegação (home, fórum, etc.) organizados verticalmente 
-    e centralizados.
-    */
-
-    html header {
-        height: 230px; /* Define a altura do header */
-        flex-flow: column nowrap; /* Organiza os botões em coluna */
-        align-content: center; /* Alinha os itens verticalmente */
-        justify-content: center; /* Alinha os itens horizontalmente */
-    }
-
-    html header img {
-        height: 90px; /* Define a altura da imagem no header */
-        display: block;
-        margin: auto;
-        margin-top: 5px;
-    }
-
-    html header a {
-        padding: 0px 40px; /* Define o espaçamento interno dos links */
-        display: flex;
-        margin: 5px auto; 
-        text-align: center; /* Alinha o texto dos links ao centro */
-    }
-
-    html header a:hover {
-        padding: 4px 150px; /* Aumenta o padding dos links ao passar o mouse */
-    }
-}
-
-/* Parte relacionada a configurações em dispositivos maiores que 411px e menores que 600px */
-@media screen and (min-width:411px) and (max-width:600px) {
-
-    html header {
-        height: 230px;
-        flex-flow: column nowrap;
-        align-content: center;
-        justify-content: center;
-    }
-
-    html header img {
-        height: 90px;
-        display: block;
-        margin: auto;
-        margin-top: 5px;
-    }
-
-    html #img1 {
-        height: 345px; /* Define a altura da imagem com ID "img1" */
-    }
-
-    html header a {
-        padding: 0px 150px; /* Define um espaçamento maior para os links */
-        display: flex;
-        margin: 5px auto; 
-        text-align: center;
-    }
-
-    html header a:hover {
-        padding: 4px 150px; /* Mantém o padding dos links ao passar o mouse */
-    }
-}
-
-@media screen and (max-width:800px) {
-    html main {
-        /* Pode ser configurado posteriormente */
-    }
-    html #img1 {
-        background-image: url(imagens/modelos\ m.jpg); /* Altera a imagem de fundo para telas menores */
-    }
-}
-
 /* Definição de cores usadas no design (comentadas para referência)
 #D38491 - Rosa claro
 #D8AD75 - Amarelo claro
@@ -109,6 +32,13 @@ header img {
     margin-left: 10px;
     margin-top: 5px;
     border-radius: 30px; /* Define bordas arredondadas para a imagem */
+}
+header .logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 6px;
+    
 }
 
 #img1 {
@@ -197,3 +127,88 @@ footer iframe {
     background-color: #331A1E;
     transition-duration: .5s;
 }
+
+
+/* Parte relacionada a configurações em dispositivos menores que 410px */
+
+
+@media screen and (max-width:410px) {
+
+    /*
+    Configuração do tamanho do header, aumento para telas menores, 
+    com os botões de navegação (home, fórum, etc.) organizados verticalmente 
+    e centralizados.
+    */
+
+    html header {
+        height: 230px; /* Define a altura do header */
+        flex-flow: column nowrap; /* Organiza os botões em coluna */
+        align-content: center; /* Alinha os itens verticalmente */
+        justify-content: center; /* Alinha os itens horizontalmente */
+    }
+
+    html header img {
+        height: 70px; /* Define a altura da imagem no header */
+        display: block;
+        margin: auto;
+        margin-top: 5px;
+    }
+    html #img1 {
+        height: 239px; /* Define a altura da imagem com ID "img1" */
+    }
+
+    html header a {
+        padding: 0px 40px; /* Define o espaçamento interno dos links */
+        display: flex;
+        margin: 5px auto; 
+        text-align: center; /* Alinha o texto dos links ao centro */
+    }
+
+    html header a:hover {
+        padding: 4px; /* Aumenta o padding dos links ao passar o mouse */
+        justify-content: center;
+    }
+}
+
+/* Parte relacionada a configurações em dispositivos maiores que 411px e menores que 600px */
+
+@media screen and (min-width:411px) and (max-width:626px) {
+
+     header {
+        height: 230px;
+        flex-flow: column nowrap;
+        align-content: center;
+        justify-content: center;
+        
+        
+    }
+
+    html header img {
+        height: 90px;
+        display: block;
+        margin: auto;
+        margin-top: 5px;
+    }
+
+    html #img1 {
+        height: 345px; /* Define a altura da imagem com ID "img1" */
+    }
+
+    html header a {
+        padding: 0px 150px; /* Define um espaçamento maior para os links */
+        display: flex;
+        margin: 5px auto; 
+        text-align: center;
+    }
+
+    html header a:hover {
+        padding: 4px 150px; /* Mantém o padding dos links ao passar o mouse */
+    }
+}
+
+@media screen and (max-width:800px) {
+    html #img1 {
+        background-image: url(imagens/modelos\ m.jpg); /* Altera a imagem de fundo para telas menores */
+    }
+}
+
