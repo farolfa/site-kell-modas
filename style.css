@@ -40,6 +40,9 @@
         margin: auto;
         margin-top: 5px;
     }
+    html #img1{
+        height: 345px;
+    }
     html header a{
      padding: 0px 150px; 
      display: flex;
