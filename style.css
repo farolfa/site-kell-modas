@@ -1,195 +1,199 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+/* Importa a fonte "Bodoni Moda" do Google Fonts */
 
+/* Parte relacionada a configurações em dispositivos menores que 410px */
 @media screen and (max-width:410px) {
-    html header{
+
+    /*
+    Configuração do tamanho do header, aumento para telas menores, 
+    com os botões de navegação (home, fórum, etc.) organizados verticalmente 
+    e centralizados.
+    */
+
+    html header {
+        height: 230px; /* Define a altura do header */
+        flex-flow: column nowrap; /* Organiza os botões em coluna */
+        align-content: center; /* Alinha os itens verticalmente */
+        justify-content: center; /* Alinha os itens horizontalmente */
+    }
+
+    html header img {
+        height: 90px; /* Define a altura da imagem no header */
+        display: block;
+        margin: auto;
+        margin-top: 5px;
+    }
+
+    html header a {
+        padding: 0px 40px; /* Define o espaçamento interno dos links */
+        display: flex;
+        margin: 5px auto; 
+        text-align: center; /* Alinha o texto dos links ao centro */
+    }
+
+    html header a:hover {
+        padding: 4px 150px; /* Aumenta o padding dos links ao passar o mouse */
+    }
+}
+
+/* Parte relacionada a configurações em dispositivos maiores que 411px e menores que 600px */
+@media screen and (min-width:411px) and (max-width:600px) {
+
+    html header {
         height: 230px;
         flex-flow: column nowrap;
         align-content: center;
         justify-content: center;
-        
     }
-    html header img{
+
+    html header img {
         height: 90px;
         display: block;
         margin: auto;
         margin-top: 5px;
     }
-    html header a{
-     padding: 0px 40px; 
-     display: flex;
-     margin: 5px auto; 
-     text-align: center;
 
+    html #img1 {
+        height: 345px; /* Define a altura da imagem com ID "img1" */
     }
-    html header a:hover{
-        padding: 4px 150px;
+
+    html header a {
+        padding: 0px 150px; /* Define um espaçamento maior para os links */
+        display: flex;
+        margin: 5px auto; 
+        text-align: center;
+    }
+
+    html header a:hover {
+        padding: 4px 150px; /* Mantém o padding dos links ao passar o mouse */
     }
 }
-@media screen   and (min-width:411px) and (max-width:600px) {
 
-    html header{
-        height: 230px;
-        flex-flow: column nowrap;
-        align-content: center;
-        justify-content: center;
-        
-    }
-    html header img{
-        height: 90px;
-        display: block;
-        margin: auto;
-        margin-top: 5px;
-    }
-    html #img1{
-        height: 345px;
-    }
-    html header a{
-     padding: 0px 150px; 
-     display: flex;
-     margin: 5px auto; 
-     text-align: center;
-
-    }
-    html header a:hover{
-        padding: 4px 150px;
-    }
-    
-}
 @media screen and (max-width:800px) {
-    html main{
-        
+    html main {
+        /* Pode ser configurado posteriormente */
     }
-    html #img1{
-        
-        background-image: url(imagens/modelos\ m.jpg);
-        
+    html #img1 {
+        background-image: url(imagens/modelos\ m.jpg); /* Altera a imagem de fundo para telas menores */
     }
-    
 }
-/*
-cores
-#D38491
-#D8AD75
-#FFF3F3
-#C88BD9
-#D98BC8
-#D9948B
-#D9A28B
 
+/* Definição de cores usadas no design (comentadas para referência)
+#D38491 - Rosa claro
+#D8AD75 - Amarelo claro
+#FFF3F3 - Branco rosado
+#C88BD9 - Roxo claro
+#D98BC8 - Rosa forte
+#D9948B - Bege rosado
+#D9A28B - Bege
 */
-*{
+
+* {
     margin: 0px;
     padding: 0px;
-    font-family:Bodoni Moda;
-    
+    font-family: Bodoni Moda; /* Define a fonte padrão do site */
 }
 
-
-header{
-    
+header {
     display: flex;
-    flex-direction: row ;
-    align-content:center ;
-    background-color: #331A1E;
+    flex-direction: row;
+    align-content: center;
+    background-color: #331A1E; /* Cor de fundo do header (marrom escuro) */
     height: 60px;
     align-items: center;
     justify-content: space-between;
-
 }
 
-header img{
+header img {
     height: 60px;
-    margin-left:10px ;
-    margin-top:5px;
-    border-radius: 30px;
-
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 30px; /* Define bordas arredondadas para a imagem */
 }
-    #img1{
-background-image: url(imagens/moda-anos-80-com-mix-de-estampas.png.webp);
-background-size: 100vw;
-background-repeat: no-repeat;
-height: 500px;
-max-width: 100vw;
-background-position: center;
-margin: auto;
-    }
 
-header nav{
-    padding: 9px; 
-  
-    
+#img1 {
+    background-image: url(imagens/moda-anos-80-com-mix-de-estampas.png.webp);
+    background-size: 100vw; /* A imagem cobre toda a largura da janela */
+    background-repeat: no-repeat;
+    height: 500px;
+    max-width: 100vw;
+    background-position: center;
+    margin: auto;
 }
-header a{
-    
+
+header nav {
+    padding: 9px;
+}
+
+header a {
     padding: 3px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    background-color:#D8AD75 ;
-    border-radius: 5px;
-    box-shadow: 0.5px 0.5px 0.5px black;
-
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: rgb(0, 0, 0); /* Cor do texto dos links (preto) */
+    background-color: #D8AD75; /* Cor de fundo dos links (amarelo claro) */
+    border-radius: 5px; /* Bordas arredondadas dos links */
+    box-shadow: 0.5px 0.5px 0.5px black; /* Sombra leve ao redor dos links */
 }
-header nav{
+
+header nav {
     margin-right: 10px;
 }
-nav a:hover{
-    background-color: white ;
+
+nav a:hover {
+    background-color: white; /* Muda a cor de fundo dos links ao passar o mouse */
     border-radius: 10px;
     padding: 10px;
-    transition: 0.5s;
-    color: #D8AD75;
+    transition: 0.5s; /* Animação de transição suave ao passar o mouse */
+    color: #D8AD75; /* Muda a cor do texto ao passar o mouse */
 }
-main{
+
+main {
     font-size: 1.4em;
     font-family: sans-serif;
     padding: 10px;
-    background-color: #AA4F4F;
-    min-height: 100vh; 
-    
+    background-color: #AA4F4F; /* Cor de fundo do main (vermelho) */
+    min-height: 100vh; /* Garante que o conteúdo ocupe no mínimo a altura total da tela */
 }
 
-article{
+article {
     max-width: 800px;
     margin: auto;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.342);
+    color: white; /* Cor do texto */
+    background-color: rgba(0, 0, 0, 0.342); /* Fundo semitransparente */
     padding: 10px;
     border-radius: 0px 0px 10px 10px;
     margin-top: 1px;
     margin-bottom: 10px;
 }
-article#entrada{
-margin-top:-10px ;
+
+article#entrada {
+    margin-top: -10px;
 }
-article#texto{
+
+article#texto {
     display: block;
-    
 }
-footer iframe{
-    
+
+footer iframe {
     width: 100%;
     height: 300px;
-    
-
 }
+
 .whatsapp-link {
     position: fixed;
     bottom: 20px; 
     right: 20px; 
-    
 }
 
 .whatsapp-link img {
     width: 50px; 
-    height: auto; 
+    height: auto;
     background-color: white;
     padding: 5px;
-    border-radius: 20px 20px 20px 0px;
-}
-.whatsapp-link img:hover{
-padding: 7px;
-background-color: #331A1E;
-transition-duration: .5s;
+    border-radius: 20px 20px 20px 0px; /* Bordas arredondadas específicas para a imagem do ícone do WhatsApp */
 }
 
-
+.whatsapp-link img:hover {
+    padding: 7px;
+    background-color: #331A1E;
+    transition-duration: .5s;
+}
