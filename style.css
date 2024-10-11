@@ -23,7 +23,7 @@ header {
     display: flex;
     flex-direction: row;
     align-content: center;
-    background-color: #331A1E; /* Cor de fundo do header (marrom escuro) */
+    background-color: rgb(51, 26, 30); /* Cor de fundo do header (marrom escuro) */
     height: 60px;
     align-items: center;
     justify-content: space-between;
@@ -32,7 +32,7 @@ header {
 header img {
     height: 60px;
     margin-left: 10px;
-    margin-top: 5px;
+    
     border-radius: 30px; /* Define bordas arredondadas para a imagem */
 }
 header .logo{
