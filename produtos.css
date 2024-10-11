@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+    color: white;
+    text-decoration: underline dashed ;
+}
+p{
+    text-align: center;
+    font-size: 2em;
+}
+#roupas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.produtos{
+height: 420px;
+width: 240px;
+padding: 20px;
+background-image: linear-gradient( #D8AD75,#D38491);
+border-radius: 20px;
+font-size: 20px;
+}
+main div {
+    padding: 10px;
+    margin: 10px;
+}
+.items{
+    height: 300px;
+}
+
+
