@@ -28,5 +28,47 @@ main div {
 .items{
     height: 300px;
 }
-
+#botao1{
+    background-color: rgb(54, 22, 170);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+     margin-left: 75px;
+     text-decoration: none;
+     
+}
+#botao2{
+    background-color: rgb(44, 116, 211);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+     margin-left: 75px;
+     text-decoration: none;
+     
+}
+#botao3{
+    background-color: rgb(92, 21, 76);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+     margin-left: 75px;
+     text-decoration: none;
+     
+}
+#botao1:hover{
+    background-color: rgb(226, 147, 57);
+}
+#botao2:hover{
+    background-color: rgb(226, 57, 57);
+}
+#botao3:hover{
+    background-color: rgb(67, 140, 158);
+}
+.texto{
+    color: #ffffff;
+    margin-top: -10px;
+}
 
