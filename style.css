@@ -20,26 +20,19 @@
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
+ padding-top: 40px;
     background-color: rgb(51, 26, 30); /* Cor de fundo do header (marrom escuro) */
-    height: 60px;
-    align-items: center;
-    justify-content: space-between;
+    height:210px;
+   text-align: center;
+    
+}
+nav{
+    display: block;
 }
 
 header img {
-    height: 60px;
+    height: 120px;
     margin-left: 10px;
-    
-    border-radius: 30px; /* Define bordas arredondadas para a imagem */
-}
-header .logo{
-    display: flex;
-    color: white;
-    align-items: center;
-    gap: 6px;
     
 }
 
@@ -67,9 +60,6 @@ header a {
     box-shadow: 0.5px 0.5px 0.5px black; /* Sombra leve ao redor dos links */
 }
 
-header nav {
-    margin-right: 10px;
-}
 
 nav a:hover {
     background-color: white; /* Muda a cor de fundo dos links ao passar o mouse */
@@ -86,6 +76,72 @@ main {
     background-color: #AA4F4F; /* Cor de fundo do main (vermelho) */
     min-height: 100vh; /* Garante que o conteúdo ocupe no mínimo a altura total da tela */
 }
+#roupas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.produtos{
+height: 420px;
+width: 240px;
+padding: 20px;
+background-image: linear-gradient( #D8AD75,#D38491);
+border-radius: 20px;
+font-size: 20px;
+}
+main div {
+    padding: 10px;
+    margin: 10px;
+}
+.items{
+    height: 300px;
+}
+#botao1{
+    background-color: rgb(54, 22, 170);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+     margin-left: 75px;
+     text-decoration: none;
+     
+}
+#botao2{
+    background-color: rgb(44, 116, 211);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+     margin-left: 75px;
+     text-decoration: none;
+     
+}
+#botao3{
+    background-color: rgb(92, 21, 76);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+     margin-left: 75px;
+     text-decoration: none;
+     
+}
+#botao1:hover{
+    background-color: rgb(226, 147, 57);
+}
+#botao2:hover{
+    background-color: rgb(226, 57, 57);
+}
+#botao3:hover{
+    background-color: rgb(67, 140, 158);
+}
+.texto{
+    color: #ffffff;
+    margin-top: -10px;
+}
+
+
 
 article {
     max-width: 800px;
@@ -147,6 +203,7 @@ footer iframe {
     transition-duration: .5s;
 }
 
+
 /* Parte relacionada a configurações em dispositivos menores que 410px */
 
 
@@ -163,6 +220,7 @@ footer iframe {
         flex-flow: column nowrap; /* Organiza os botões em coluna */
         align-content: center; /* Alinha os itens verticalmente */
         justify-content: center; /* Alinha os itens horizontalmente */
+        
     }
 
     html header img {
@@ -179,7 +237,7 @@ footer iframe {
         padding: 0px 40px; /* Define o espaçamento interno dos links */
         display: flex;
         margin: 5px auto; 
-        text-align: center; /* Alinha o texto dos links ao centro */
+        justify-content: center;
     }
 
     html header a:hover {
@@ -197,8 +255,7 @@ footer iframe {
         flex-flow: column nowrap;
         align-content: center;
         justify-content: center;
-        
-        
+
     }
 
     html header img {
@@ -216,7 +273,8 @@ footer iframe {
         padding: 0px 150px; /* Define um espaçamento maior para os links */
         display: flex;
         margin: 5px auto; 
-        text-align: center;
+        justify-content: center;
+        
     }
 
     html header a:hover {
