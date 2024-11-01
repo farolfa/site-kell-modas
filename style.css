@@ -17,14 +17,23 @@
     margin: 0px;
     padding: 0px;
     font-family: Bodoni Moda; /* Define a fonte padrão do site */
+    scroll-behavior: smooth;
 }
 
+body{
+    background: linear-gradient(45deg,#D38491 ,
+    #beac94 ,
+    #D98BC8 ,
+    #000000 ,
+    #694f44 ,
+    rgb(182, 156, 162));
+}
 header {
  padding-top: 40px;
     background-color: rgb(51, 26, 30); /* Cor de fundo do header (marrom escuro) */
     height:210px;
    text-align: center;
-    
+   /*position:fixed; se fazer fica foda*/
 }
 nav{
     display: block;
@@ -94,6 +103,10 @@ main div {
     padding: 10px;
     margin: 10px;
 }
+main div >#receba{
+    margin: 0px;
+    padding: 0px;
+}
 .items{
     height: 300px;
 }
@@ -140,6 +153,47 @@ main div {
     color: #ffffff;
     margin-top: -10px;
 }
+ 
+#contato{
+    background-color: rgba(0, 0, 0, 0.363);
+    border-radius: 40px;
+    color: white;
+    max-width: 640px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+   
+}
+#contato h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#infos{
+
+    list-style: none;
+    background: linear-gradient(45deg,#D38491 ,
+    #D8AD75 ,
+    #D98BC8 ,
+    #D9948B ,
+    #D9A28B ,
+    #d9A);
+    border-radius: 40px;
+    margin: auto;
+    
+    
+}
+#infos ul li {
+    padding: 20px;
+    margin: 25px;
+    background-color: #D38491; 
+    border-radius: 10px;
+    text-align: center;
+    list-style: none;
+    display: inline-block;
+    
+}
+
 
 
 
@@ -179,29 +233,13 @@ footer iframe {
     padding: 5px;
     border-radius: 20px 20px 20px 0px; /* Bordas arredondadas específicas para a imagem do ícone do WhatsApp */
 }
-.instagram-link {
-    position: fixed;
-    bottom: 80px; 
-    right: 20px; 
-}
-
-.instagram-link img {
-    width: 50px; 
-    background-color: white;
-    padding: 5px;
-    border-radius: 20px 20px 20px 0px; /* Bordas arredondadas específicas para a imagem do ícone do WhatsApp */
-}
 
 .whatsapp-link img:hover {
     padding: 7px;
     background-color: #331A1E;
     transition-duration: .5s;
 }
-.instagram-link img:hover {
-    padding: 7px;
-    background-color: #331A1E;
-    transition-duration: .5s;
-}
+
 
 
 /* Parte relacionada a configurações em dispositivos menores que 410px */
