@@ -1,67 +1,50 @@
+/* Importa a fonte "Bodoni Moda" do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 
-/* Importa a fonte "Bodoni Moda" do Google Fonts */
-
-/* Definição de cores usadas no design (comentadas para referência)
-#D38491 - Rosa claro
-#D8AD75 - Amarelo claro
-#FFF3F3 - Branco rosado
-#C88BD9 - Roxo claro
-#D98BC8 - Rosa forte
-#D9948B - Bege rosado
-#D9A28B - Bege
-#d9A
+/* Define as cores usadas no design (apenas para referência)
+   Rosa claro: #D38491 
+   Amarelo claro: #D8AD75
+   Branco rosado: #FFF3F3
+   Roxo claro: #C88BD9
+   Rosa forte: #D98BC8
+   Bege rosado: #D9948B
+   Bege: #D9A28B
 */
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0px; /* Remove margens padrão */
+    padding: 0px; /* Remove espaçamento interno padrão */
     font-family: Bodoni Moda; /* Define a fonte padrão do site */
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* Suaviza a rolagem da página */
 }
 
-body{
-    background: linear-gradient(45deg,#D38491 ,
-    #beac94 ,
-    #D98BC8 ,
-    #000000 ,
-    #694f44 ,
-    rgb(182, 156, 162));
+body {
+    background-color: #AA4F4F; /* Define a cor de fundo do corpo da página */
 }
+
 header {
- padding-top: 40px;
+    padding-top: 40px; /* Espaçamento superior no header */
     background-color: rgb(51, 26, 30); /* Cor de fundo do header (marrom escuro) */
-    height:210px;
-   text-align: center;
-   /*position:fixed; se fazer fica foda*/
+    height: 210px; /* Altura do header */
+    text-align: center; /* Centraliza o texto no header */
+    /* position: fixed; se fazer fica foda */
 }
-nav{
-    display: block;
+
+nav {
+    display: block; /* Exibe o elemento nav como bloco */
 }
 
 header img {
-    height: 120px;
-    margin-left: 10px;
-    
-}
-
-#img1 {
-    background-image: url(imagens/moda-anos-80-com-mix-de-estampas.png.webp);
-    background-size: 100vw; /* A imagem cobre toda a largura da janela */
-    background-repeat: no-repeat;
-    height: 500px;
-    max-width: 100vw;
-    background-position: center;
-    margin: auto;
-    
+    height: 120px; /* Define a altura da imagem no header */
+    margin-left: 10px; /* Espaçamento à esquerda da imagem no header */
 }
 
 header nav {
-    padding: 9px;
+    padding: 9px; /* Define o espaçamento interno no nav dentro do header */
 }
 
 header a {
-    padding: 3px;
+    padding: 3px; /* Espaçamento interno dos links no header */
     text-decoration: none; /* Remove o sublinhado dos links */
     color: rgb(0, 0, 0); /* Cor do texto dos links (preto) */
     background-color: #D8AD75; /* Cor de fundo dos links (amarelo claro) */
@@ -69,238 +52,225 @@ header a {
     box-shadow: 0.5px 0.5px 0.5px black; /* Sombra leve ao redor dos links */
 }
 
-
 nav a:hover {
     background-color: white; /* Muda a cor de fundo dos links ao passar o mouse */
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 10px; /* Aumenta a curvatura das bordas ao passar o mouse */
+    padding: 10px; /* Aumenta o espaçamento interno dos links ao passar o mouse */
     transition: 0.5s; /* Animação de transição suave ao passar o mouse */
     color: #D8AD75; /* Muda a cor do texto ao passar o mouse */
 }
 
 main {
-    font-size: 1.4em;
-    font-family: sans-serif;
-    padding: 10px;
+    font-size: 1.4em; /* Aumenta o tamanho da fonte do conteúdo principal */
+    font-family: sans-serif; /* Define a fonte do conteúdo principal */
+    padding: 10px; /* Espaçamento interno no main */
     background-color: #AA4F4F; /* Cor de fundo do main (vermelho) */
     min-height: 100vh; /* Garante que o conteúdo ocupe no mínimo a altura total da tela */
 }
-#roupas{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+
+#roupas {
+    display: flex; /* Define o layout flexível para a seção de roupas */
+    flex-flow: row wrap; /* Alinha os itens em linhas, permitindo quebra de linha */
+    justify-content: space-around; /* Distribui os itens de forma espaçada */
 }
 
-.produtos{
-height: 420px;
-width: 240px;
-padding: 20px;
-background-image: linear-gradient( #D8AD75,#D38491);
-border-radius: 20px;
-font-size: 20px;
+.produtos {
+    height: 420px; /* Define a altura dos produtos */
+    width: 240px; /* Define a largura dos produtos */
+    padding: 20px; /* Define o espaçamento interno dos produtos */
+    background-image: linear-gradient(#D8AD75, #D38491); /* Gradiente de fundo dos produtos */
+    border-radius: 20px; /* Bordas arredondadas dos produtos */
+    font-size: 20px; /* Tamanho da fonte dos produtos */
 }
+
 main div {
-    padding: 10px;
-    margin: 10px;
+    padding: 10px; /* Espaçamento interno das divs no main */
+    margin: 10px; /* Espaçamento externo das divs no main */
 }
-main div >#receba{
-    margin: 0px;
-    padding: 0px;
-}
-.items{
-    height: 300px;
-}
-#botao1{
-    background-color: rgb(54, 22, 170);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-     margin-left: 75px;
-     text-decoration: none;
-     
-}
-#botao2{
-    background-color: rgb(44, 116, 211);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-     margin-left: 75px;
-     text-decoration: none;
-     
-}
-#botao3{
-    background-color: rgb(92, 21, 76);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-     margin-left: 75px;
-     text-decoration: none;
-     
-}
-#botao1:hover{
-    background-color: rgb(226, 147, 57);
-}
-#botao2:hover{
-    background-color: rgb(226, 57, 57);
-}
-#botao3:hover{
-    background-color: rgb(67, 140, 158);
-}
-.texto{
-    color: #ffffff;
-    margin-top: -10px;
-}
- 
-#contato{
-    background-color: rgba(0, 0, 0, 0.363);
-    border-radius: 40px;
-    color: white;
-    max-width: 640px;
-    margin: auto;
-    display: flex;
-    flex-flow: row wrap;
-   
-}
-#contato h1{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-#infos{
 
-    list-style: none;
-    background: linear-gradient(45deg,#D38491 ,
-    #D8AD75 ,
-    #D98BC8 ,
-    #D9948B ,
-    #D9A28B ,
-    #d9A);
-    border-radius: 40px;
-    margin: auto;
-    
-    
+main div >#receba {
+    margin: 0px; /* Remove margem */
+    padding: 0px; /* Remove espaçamento interno */
 }
+
+.items {
+    height: 300px; /* Define a altura dos itens */
+}
+
+#botao1 {
+    background-color: rgb(54, 22, 170); /* Cor de fundo do botão 1 */
+    color: white; /* Cor do texto do botão 1 */
+    border: none; /* Remove borda do botão 1 */
+    border-radius: 10px; /* Bordas arredondadas do botão 1 */
+    padding: 10px; /* Espaçamento interno do botão 1 */
+    margin-left: 75px; /* Espaçamento à esquerda do botão 1 */
+    text-decoration: none; /* Remove sublinhado do texto do botão 1 */
+}
+
+#botao2 {
+    background-color: rgb(44, 116, 211); /* Cor de fundo do botão 2 */
+    color: white; /* Cor do texto do botão 2 */
+    border: none; /* Remove borda do botão 2 */
+    border-radius: 10px; /* Bordas arredondadas do botão 2 */
+    padding: 10px; /* Espaçamento interno do botão 2 */
+    margin-left: 75px; /* Espaçamento à esquerda do botão 2 */
+    text-decoration: none; /* Remove sublinhado do texto do botão 2 */
+}
+
+#botao3 {
+    background-color: rgb(92, 21, 76); /* Cor de fundo do botão 3 */
+    color: white; /* Cor do texto do botão 3 */
+    border: none; /* Remove borda do botão 3 */
+    border-radius: 10px; /* Bordas arredondadas do botão 3 */
+    padding: 10px; /* Espaçamento interno do botão 3 */
+    margin-left: 75px; /* Espaçamento à esquerda do botão 3 */
+    text-decoration: none; /* Remove sublinhado do texto do botão 3 */
+}
+
+#botao1:hover {
+    background-color: rgb(226, 147, 57); /* Cor de fundo ao passar o mouse sobre o botão 1 */
+}
+
+#botao2:hover {
+    background-color: rgb(226, 57, 57); /* Cor de fundo ao passar o mouse sobre o botão 2 */
+}
+
+#botao3:hover {
+    background-color: rgb(67, 140, 158); /* Cor de fundo ao passar o mouse sobre o botão 3 */
+}
+
+.texto {
+    color: #ffffff; /* Cor do texto */
+    margin-top: -10px; /* Margem superior negativa */
+}
+
+#contato {
+    background-color: rgba(0, 0, 0, 0.363); /* Fundo semitransparente */
+    border-radius: 40px; /* Bordas arredondadas */
+    color: white; /* Cor do texto */
+    max-width: 640px; /* Largura máxima */
+    margin: auto; /* Centraliza horizontalmente */
+    display: flex; /* Layout flexível */
+    flex-flow: row wrap; /* Alinha itens em linha, permitindo quebra de linha */
+}
+
+#contato h1 {
+    text-align: center; /* Centraliza o texto dos títulos */
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte dos títulos */
+}
+
+#infos {
+    list-style: none; /* Remove estilo da lista */
+    background: linear-gradient(45deg, #D38491, #D8AD75, #D98BC8, #D9948B, #D9A28B, #d9A); /* Gradiente de fundo */
+    border-radius: 40px; /* Bordas arredondadas */
+    margin: auto; /* Centraliza horizontalmente */
+}
+
 #infos ul li {
-    padding: 20px;
-    margin: 25px;
-    background-color: #D38491; 
-    border-radius: 10px;
-    text-align: center;
-    list-style: none;
-    display: inline-block;
-    
+    padding: 20px; /* Espaçamento interno dos itens da lista */
+    margin: 25px; /* Espaçamento externo dos itens da lista */
+    background-color: #D38491; /* Cor de fundo dos itens da lista */
+    border-radius: 10px; /* Bordas arredondadas dos itens da lista */
+    text-align: center; /* Centraliza o texto dos itens da lista */
+    list-style: none; /* Remove estilo da lista */
+    display: inline-block; /* Exibe os itens da lista como blocos inline */
 }
-
-
-
 
 article {
-    max-width: 800px;
-    margin: auto;
+    max-width: 800px; /* Largura máxima do artigo */
+    margin: auto; /* Centraliza horizontalmente */
     color: white; /* Cor do texto */
     background-color: rgba(0, 0, 0, 0.342); /* Fundo semitransparente */
-    padding: 10px;
-    border-radius: 0px 0px 10px 10px;
-    margin-top: 1px;
-    margin-bottom: 10px;
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 0px 0px 10px 10px; /* Bordas arredondadas */
+    margin-top: 1px; /* Margem superior */
+    margin-bottom: 10px; /* Margem inferior */
 }
 
 article#entrada {
-    margin-top: -10px;
+    margin-top: -10px; /* Margem superior negativa */
 }
 
 article#texto {
-    display: block;
+    display: block; /* Exibe o elemento como um bloco */
 }
 
 footer iframe {
-    width: 100%;
-    height: 300px;
+    width: 100%; /* Largura total do iframe */
+    height: 300px; /* Altura do iframe */
 }
 
 .whatsapp-link {
-    position: fixed;
-    bottom: 20px; 
-    right: 20px; 
+    position: fixed; /* Fixa a posição do link do WhatsApp */
+    bottom: 20px; /* Distância da parte inferior da tela */
+    right: 20px; /* Distância da parte direita da tela */
 }
 
 .whatsapp-link img {
-    width: 50px; 
-    background-color: white;
-    padding: 5px;
-    border-radius: 20px 20px 20px 0px; /* Bordas arredondadas específicas para a imagem do ícone do WhatsApp */
+    width: 50px; /* Largura da imagem do ícone do WhatsApp */
+    background-color: white; /* Cor de fundo da imagem */
+    padding: 5px; /* Espaçamento interno da imagem */
+    border-radius: 20px 20px 20px 0px; /* Bordas arredondadas específicas da imagem */
 }
 
 .whatsapp-link img:hover {
-    padding: 7px;
-    background-color: #331A1E;
-    transition-duration: .5s;
+    padding: 7px; /* Aumenta o padding ao passar o mouse sobre a imagem */
+    background-color: #331A1E; /* Muda a cor de fundo ao passar o mouse sobre a imagem */
+    transition-duration: .5s; /* Define a duração da transição */
 }
 
-
-
 /* Parte relacionada a configurações em dispositivos menores que 410px */
-
-
-@media screen and (max-width:410px) {
-
+@media screen and (max-width: 410px) {
     /*
     Configuração do tamanho do header, aumento para telas menores, 
     com os botões de navegação (home, fórum, etc.) organizados verticalmente 
     e centralizados.
     */
-
     html header {
         height: 230px; /* Define a altura do header */
         flex-flow: column nowrap; /* Organiza os botões em coluna */
         align-content: center; /* Alinha os itens verticalmente */
         justify-content: center; /* Alinha os itens horizontalmente */
-        
     }
 
     html header img {
         height: 70px; /* Define a altura da imagem no header */
-        display: block;
-        margin: auto;
-        margin-top: 5px;
+        display: block; /* Exibe a imagem como um bloco */
+        margin: auto; /* Centraliza a imagem horizontalmente */
+        margin-top: 5px; /* Espaçamento superior da imagem */
     }
+
     html #img1 {
         height: 239px; /* Define a altura da imagem com ID "img1" */
     }
 
     html header a {
         padding: 0px 40px; /* Define o espaçamento interno dos links */
-        display: flex;
-        margin: 5px auto; 
-        justify-content: center;
+        display: flex; /* Exibe os links como flexíveis */
+        margin: 5px auto; /* Centraliza os links horizontalmente */
+        justify-content: center; /* Centraliza o conteúdo dos links */
     }
 
     html header a:hover {
         padding: 4px; /* Aumenta o padding dos links ao passar o mouse */
-        justify-content: center;
+        justify-content: center; /* Centraliza o conteúdo dos links */
     }
 }
 
 /* Parte relacionada a configurações em dispositivos maiores que 411px e menores que 600px */
-
-@media screen and (min-width:411px) and (max-width:626px) {
-
-     header {
-        height: 230px;
-        flex-flow: column nowrap;
-        align-content: center;
-        justify-content: center;
-
+@media screen and (min-width: 411px) and (max-width: 626px) {
+    header {
+        height: 230px; /* Define a altura do header */
+        flex-flow: column nowrap; /* Organiza os botões em coluna */
+        align-content: center; /* Alinha os itens verticalmente */
+        justify-content: center; /* Alinha os itens horizontalmente */
     }
 
     html header img {
-        height: 90px;
-        display: block;
-        margin: auto;
-        margin-top: 5px;
+        height: 90px; /* Define a altura da imagem no header */
+        display: block; /* Exibe a imagem como um bloco */
+        margin: auto; /* Centraliza a imagem horizontalmente */
+        margin-top: 5px; /* Espaçamento superior da imagem */
     }
 
     html #img1 {
@@ -309,18 +279,18 @@ footer iframe {
 
     html header a {
         padding: 0px 150px; /* Define um espaçamento maior para os links */
-        display: flex;
-        margin: 5px auto; 
-        justify-content: center;
-        
+        display: flex; /* Exibe os links como flexíveis */
+        margin: 5px auto; /* Centraliza os links horizontalmente */
+        justify-content: center; /* Centraliza o conteúdo dos links */
     }
 
     html header a:hover {
-        padding: 4px 150px; /* Mantém o padding dos links ao passar o mouse */
+        padding: 4px 150px; /* Define o padding dos links ao passar o mouse */
     }
 }
 
-@media screen and (max-width:800px) {
+/* Configurações para dispositivos com largura máxima de 800px */
+@media screen and (max-width: 800px) {
     html #img1 {
         background-image: url(imagens/modelos\ m.jpg); /* Altera a imagem de fundo para telas menores */
     }

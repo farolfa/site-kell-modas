@@ -1,158 +1,170 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kell Modas</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/site-kell-modas/imagens/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres para a página como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta o viewport para responsividade -->
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Kell Modas</title> <!-- Título da página -->
+    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
+    <link rel="shortcut icon" href="/site-kell-modas/imagens/favicon.ico" type="image/x-icon"> <!-- Favicon do site -->
     <style>/*link do carrosel brabo https://www.marciocunha.eti.br/como-criar-um-carrosel-de-imagens-em-html5/*/
 
-#receba{
-    max-width: 770px;
-    height: 500px;
-    padding:  0px;
-    margin: 0px;
-    margin: auto;
-}
+        #receba {
+            max-width: 770px;
+            height: 500px;
+            padding: 0px;
+            margin: 0px auto;
+        } /* Estilo do contêiner do carrossel */
+
         .carousel {
-  width: 100%;
-  height: 500px;
-  position: relative;
-  background-repeat: no-repeat;
-}
+            width: 100%;
+            height: 500px;
+            position: relative;
+            background-repeat: no-repeat;
+        } /* Estilo geral do carrossel */
 
-.slides {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
+        .slides {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        } /* Contêiner das slides */
 
-.slide {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  display: none;
-}
+        .slide {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: none;
+        } /* Estilo individual de cada slide */
 
-.slide img {
-  width: 100%;
-  object-fit: cover;
-}
+        .slide img {
+            width: 100%;
+            object-fit: cover;
+        } /* Estilo das imagens dentro dos slides */
 
-.navigation {
-  width: 100%;
-  height: 50px;
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-}
+        .navigation {
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+        } /* Estilo da navegação do carrossel */
 
-.navigation label {
-  width: 20px;
-  height: 20px;
-  background-color: #ccc;
-  border-radius: 50%;
-  margin: 10px;
-  cursor: pointer;
-}
+        .navigation label {
+            width: 20px;
+            height: 20px;
+            background-color: #ccc;
+            border-radius: 50%;
+            margin: 10px;
+            cursor: pointer;
+        } /* Estilo dos botões de navegação */
 
-#slide1:checked ~ .slides .slide:nth-child(1),
-#slide2:checked ~ .slides .slide:nth-child(2),
-#slide3:checked ~ .slides .slide:nth-child(3) {
-  display: block;
-}
+        #slide1:checked ~ .slides .slide:nth-child(1),
+        #slide2:checked ~ .slides .slide:nth-child(2),
+        #slide3:checked ~ .slides .slide:nth-child(3) {
+            display: block;
+        } /* Mostra a slide correspondente ao botão de navegação selecionado */
     </style>
 </head>
 <body>
+    <!-- Link para WhatsApp -->
     <a href="https://w.app/2tGVc0" class="whatsapp-link" target="_blank">
         <img src="./imagens/WhatsApp-Logo.png" alt="WhatsApp" />
     </a>
-
     
+    <!-- Cabeçalho do site -->
     <header>
-         <div><img src="imagens/LOGOTIPO SEM FUNDO E NA COR BRANCA-KEL MODAS.png" alt="" ></div>
-         
+        <div><img src="imagens/LOGOTIPO SEM FUNDO E NA COR BRANCA-KEL MODAS.png" alt="" ></div>
         <nav>
             <a href="index.html">Home</a> 
             <a href="#roupas">Produtos</a> 
             <a href="#contato">Contato</a> 
-            <a href="#">Venha nos conhecer</a>
+            <a href="#fotter">Venha nos conhecer</a>
         </nav>
-
     </header>
-
     
-
-
-        <div id="receba"><div class="carousel" style=" background-color: cadetblue;">
-       
+    <!-- Carrossel de imagens -->
+    <div id="receba">
+        <div class="carousel">
             <input type="radio" name="carousel" id="slide1" checked>
             <input type="radio" name="carousel" id="slide2">
             <input type="radio" name="carousel" id="slide3">
-        
-
-        <div class="slides">
-          <div class="slide">
-            <img src="imagens/LOGOTIPO SEM FUNDO E NA COR BRANCA-KEL MODAS.png" alt="Slide 1">
-          </div>
-          <div class="slide">
-            <img src="imagens/LOGOTIPO SEM FUNDO E NA COR DOURADA-KEL MODAS.png" alt="Slide 2">
-          </div>
-          <div class="slide">
-            <img src="imagens/LOGOTIPO SEM FUNDO E NA COR PRETA-KEL MODAS.png" alt="Slide 3">
-          </div>
+            <div class="slides">
+                <div class="slide">
+                    <img src="imagens/Imagem do WhatsApp de 2024-11-25 à(s) 13.38.39_ed9ec4f7.jpg" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <img src="imagens/Imagem do WhatsApp de 2024-11-25 à(s) 13.39.51_714bdc36.jpg" alt="Slide 2">
+                </div>
+                <div class="slide">
+                    <img src="imagens/Imagem do WhatsApp de 2024-11-25 à(s) 13.39.53_fd680c5f.jpg" alt="Slide 3">
+                </div>
+            </div>
+            <div class="navigation">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+            </div>
         </div>
-        <div class="navigation">
-          <label for="slide1"></label>
-          <label for="slide2"></label>
-          <label for="slide3"></label>
-        </div>
-      </div></div>
-      <main>
-   <article id="texto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, reprehenderit ex saepe laudantium voluptatum, ad quae ullam, nihil deserunt expedita eum atque repudiandae tempore cupiditate porro ea laborum maxime quis. lo</article>
-   
-   <section>
-    <center>
-        <h1>Uma lista de produtos pra voce</h1>
-        <p>🫵</p>
-    </center>
-    <div id="roupas">
-<div class="produtos"><img src="imagens/roupas1.jpg" alt="" class="items"><div class="texto">Uma combinação mais social e elegante</div><a href="https://www.instagram.com/usekellmodas/p/C6HGH_suj92/?img_index=1" id="botao1" target="_blank">Quero!!!</a></div>
-<div class="produtos"><img src="imagens/roupas2.jpg" alt="" class="items"><div class="texto">Uma combinação mais social e elegante</div><a href="https://www.instagram.com/usekellmodas/p/C9XWS8yuBA8/?img_index=1" id="botao2" target="_blank">Quero!!!</a></div>
-<div class="produtos"><img src="imagens/roupas3.jpg" alt="" class="items"><div class="texto">Uma combinação mais social e elegante</div><a href="https://www.instagram.com/usekellmodas/p/C6JfOeGut3Z/?img_index=1" id="botao3" target="_blank">Quero!!!</a></div>
     </div>
     
-</section>
+    <!-- Conteúdo principal -->
+    <main>
+        <article id="texto">
+          <center>
+            <h1>Bem-vindo à Use Kell Modas!</h1>
+          </center>
 
-<section id="contato">
-    <div>
-        <h1>Contatos</h1>
-        <div id="infos">
-            <ul>
-                
-                    <center>
-                        <li>whatsapp <br> <a href="https://w.app/2tGVc0" target="_blank"><img height="40" src="imagens/whatsapp.png" alt=""></a></li>
-                        <li>instagram <br> <a href="https://www.instagram.com/usekellmodas/" target="_blank"><img height="40" src="imagens/instagram.png" alt=""></a> </li>
-                        <li style="padding: 20px 40px;"><span style="
-                         align-self: center;">email <br><a href="#" target="_blank"><img height="40" src="imagens/o-email.png" alt=""></a></span> </li>
-                    </center>
-                
-            </ul>
-        </div>
+          Na Use Kell Modas, acreditamos que estilo é uma forma de expressão pessoal. Cada peça que oferecemos é cuidadosamente selecionada para refletir essa filosofia. Seja para um look social e elegante ou casual e descontraído, temos algo especial para todos os gostos e ocasiões. <br> <br>
+          
+          Explore nosso site para encontrar inspirações de looks, dicas de moda e as últimas tendências. Nossa missão é trazer experiências de estilo que fazem você se sentir confiante e autêntico em cada momento. <br>
+        </article>
         
-    </div>
-</section>
-
+        <!-- Seção de produtos -->
+        <section>
+            <center>
+                <h1>Uma lista de produtos pra você</h1>
+                <p>🫵</p>
+            </center>
+            <div id="roupas">
+                <div class="produtos">
+                    <img src="imagens/roupas1.jpg" alt="" class="items">
+                    <div class="texto">Uma combinação mais social e elegante</div>
+                    <a href="https://www.instagram.com/usekellmodas/p/C6HGH_suj92/?img_index=1" id="botao1" target="_blank">Quero!!!</a>
+                </div>
+                <div class="produtos">
+                    <img src="imagens/roupas2.jpg" alt="" class="items">
+                    <div class="texto">Uma combinação mais social e elegante</div>
+                    <a href="https://www.instagram.com/usekellmodas/p/C9XWS8yuBA8/?img_index=1" id="botao2" target="_blank">Quero!!!</a>
+                </div>
+                <div class="produtos">
+                    <img src="imagens/roupas3.jpg" alt="" class="items">
+                    <div class="texto">Uma combinação mais social e elegante</div>
+                    <a href="https://www.instagram.com/usekellmodas/p/C6JfOeGut3Z/?img_index=1" id="botao3" target="_blank">Quero!!!</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção de contato -->
+        <section id="contato">
+            <div>
+                <h1>Contatos</h1>
+                <div id="infos">
+                    <ul>
+                        <center>
+                            <li>whatsapp <br> <a href="https://w.app/2tGVc0" target="_blank"><img height="40" src="imagens/whatsapp.png" alt=""></a></li>
+                            <li>instagram <br> <a href="https://www.instagram.com/usekellmodas/" target="_blank"><img height="40" src="imagens/instagram.png" alt=""></a></li>
+                            <li style="padding: 20px 40px;"><span style="align-self: center;">email <br><a href="#" target="_blank"><img height="40" src="imagens/o-email.png" alt=""></a></span></li>
+                        </center>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
-
-
-    <footer>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5271.968802406671!2d-49.41969155767671!3d-20.878301287673523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bdb3b11c87b5a3%3A0xe73dbc7ccdad5e70!2sMotel%20Ast%C3%BArias!5e0!3m2!1spt-BR!2sbr!4v1727442932216!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    <!-- Rodapé com Google Maps -->
+    <footer id="fotter">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14917.964395336445!2d-49.39338804234794!3d-20.811866334816457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bdad22d96dbf21%3A0x6bfeb8f294c9692e!2sUse%20Kell%20Modas!5e0!3m2!1spt-BR!2sbr!4v1732555333429!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
-
-
-
 </body>
 </html>
